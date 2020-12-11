@@ -1,88 +1,7 @@
-   86  docker swarm list
-   90  apt install xfonts-thai
-   91  wget http://prdownloads.sourceforge.net/webadmin/webmin_1.962_all.deb
-   92  dpkg --install webmin_1.962_all.deb
-   93  apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions unzip
-   94  apt --fix-broken install
-   95  dpkg --install webmin_1.962_all.deb
-   99  apt install lxde-desktop
-  150  syetemctl disable bluetooth
-  160  nmap -sP 192.1.20.0/24
-  162  docker swarm join --token SWMTKN-1-3zv5adgkerlnhj1mix1jmvsjbfiirdw59d686hpqw967601s34-8gw577lnocnzzeg74ei33y92f 192.1.20.35:2377
-  163  docker swarm join --token worker SWMTKN-1-3zv5adgkerlnhj1mix1jmvsjbfiirdw59d686hpqw967601s34-8gw577lnocnzzeg74ei33y92f 192.1.20.35:2377
-  164  docker swarm join worker --token SWMTKN-1-3zv5adgkerlnhj1mix1jmvsjbfiirdw59d686hpqw967601s34-8gw577lnocnzzeg74ei33y92f 192.1.20.35:2377
-  168  docker swarm join  --token SWMTKN-1-3zv5adgkerlnhj1mix1jmvsjbfiirdw59d686hpqw967601s34-8gw577lnocnzzeg74ei33y92f 192.1.20.35:2377
-  169  docker swarm join-token worker
-  173  docker swarm join --token SWMTKN-1-0am8mjz9b58w1sx2m2nkwkrx0dnacuv4refytbko5o9gxckdvn-0fpctdpwuxk885nsregui70qz 192.1.20.35
-  175  xclock
-  176  exit
-  177  ip route add 192.168.2.35 via 192.168.2.1 dev eth0
-  221  dpkg -i openscada-server_1+r2676-1_all.deb openscada_1+r2676-1_arm64.deb openscada-dbg_1+r2676-1_arm64.deb openscada-dev_1+r2676-1_arm64.deb openscada-libdb-main_1+r2676-1_all.deb openscada-libdb-vca_1+r2676-1_all.deb openscada-model-aglks_1+r2676-1_all.deb
-  222  apt install -f
-  228  openscada_AGLKS --demon
-  236  docker commit -a "Jaran Keowma <jaranb@gmail.com>" 11e9705aa801 oscada:bionic
-  238  docker images
-  241  docker run -d -p 10002:10002 -p 10004:10004 -p 10005:10005 --name oscada-bionic --restart=always -v ~/.openscada/:/root/.openscada/ oscada:bionic
-  247  ls
-  248  ls -a
-  249  docker ps
-  250  ifconfig
-  251  docker ps
-  253  docker stop 11e9705aa801
-  254  docker run -d -p 10002:10002 -p 10004:10004 -p 10005:10005 --name oscada-bionic  -v ~/.openscada/:/root/.openscada/ oscada:bionic
-  274  docker run -it -p 10002:10002 -p 222:22 --name oscada-bionic  -v ~/.openscada/:/root/.openscada/ oscada:bionic bash
-  275  docker run -it -p 10002:10002 -p 222:22 --name oscada-bionic  -v ~/.openscada/:/root/.openscada/ oscada:bionic '/usr/bin/openscada_AGLKS --demon'
-  276  docker stop oscada-bionic
-  277  docker rm oscada-bionic
-  280  docker rm openscada
-  287  docker run -d -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic openscada_AGLKS --demon
-  288  docker ps
-  289  docker rm openscada
-  290  docker run -d -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic bash -c "/usr/bin/openscada_AGLKS --demon"
-  292  docker rm openscada
-  293  docker run  -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic bash -c "/usr/bin/openscada_AGLKS --demon"
-  294  docker ps
-  295  docker rm openscada
-  296  docker run -itd -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic bash 
-  297  docker ps
-  307  docker exec -it openscada bash
-  312  echo "docker exec openscada /usr/bin/openscada_AGLKS --demon"  >> oscada-start.sh
-  333  docker run -d -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic
-  334  docker stop openscada
-  335  docker rm openscada
-  336  docker run -d -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic
-  337  docker ps
-  339  docker run -d -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic bash
-  340  docker ps
-  341  docker rm openscada
-  342  docker run -itd -p 10002:10002 -p 222:22 --name openscada  -v ~/.openscada/:/root/.openscada/ openscada:bionic bash
-  343  docker ps
-  344  docker exec openscada bash
-  345  docker -it exec openscada bash
-  346  docker exec -it openscada bash
-  356  mkdir docker-build
-  359  git clone https://github.com/jc21/docker-dpkg-ubuntu-bionic.git
-  396  git clone https://github.com/ignusius/openscada-docker-0.9-LTS.git
-  397  cd openscada-docker-0.9-LTS
-  399  nano Dockerfile
-  411  nano Dockerfile
-  412  docker build -t oscada:bionic .
-  413  nano Dockerfile
-  423  ls
-  424  vi install.sh
-  425  nano Dockerfile
-  426  vi install.sh
-  427  docker build -t oscada:bionic .
-  428  docker run -d -p 10002:10002 --name openscada --restart=always -v ~/.openscada/:/root/.openscada/ oscada:bionic
-  433  docker stop openscada
-  436  docker rm openscada
-  437  vi install.sh
-  441  docker build -t oscada:bionic .
-  442  nano Dockerfile
-  443  vi install.sh
-  444  docker build -t oscada:bionic .
-  445  docker run 44f83bdcb358 bash -c 'apt install -f'
-  446  docker run 44f83bdcb358 bash -c 'dpkg -i /tmp/deb/*.deb'
+# Ubuntu:Bionic Arm64V8 Build.
+docker run -d -p 10002:10002 -p 10004:10004 -p 10005:10005 --name oscada-bionic  -v ~/.openscada/:/root/.openscada/ oscada:bionic
+docker build -t oscada:bionic .
+docker run 44f83bdcb358 bash -c 'dpkg -i /tmp/deb/*.deb'
   449  docker run -it 44f83bdcb358 bash
   453  docker commit -a "Jaran Keowma <jaranb@gmail.com>" 16421df9d73e openscada:bionic
   459  cd /build-root
@@ -92,12 +11,8 @@
   487  apt-cache depends openscada_1+r2676-1_arm64.deb
   488  apt-cache depends openscada-server_1+r2676-1_all.deb
   489  apt depends openscada-server_1+r2676-1_all.deb
-  490  dpkg -I openscada-server_1+r2676-1_all.deb
-  492  dpkg -I openscada_1+r2676-1_arm64.deb
-  494  dpkg -I openscada-model-aglks_1+r2676-1_all.deb
-  495  dpkg -I openscada-server_1+r2676-1_all.deb
-  517  sftp 192.168.2.113
-  518  sftp 192.1.20.113
-  519  ls
-  520  history
-  521  history >> build-dep.txt
+
+dpkg -I openscada-server_1+r2676-1_all.deb
+dpkg -I openscada_1+r2676-1_arm64.deb
+dpkg -I openscada-model-aglks_1+r2676-1_all.deb
+dpkg -I openscada-server_1+r2676-1_all.deb
