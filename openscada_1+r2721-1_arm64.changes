@@ -1,0 +1,76 @@
+Format: 1.8
+Date: Sun, 17 Jun 2018 22:00:00 +0200
+Source: openscada
+Binary: openscada openscada-plc openscada-server openscada-dbg openscada-doc-en openscada-doc-ru openscada-doc-uk openscada-dev openscada-libdb-main openscada-libdb-vca openscada-model-aglks openscada-model-boiler
+Architecture: source arm64 all
+Version: 1+r2721-1
+Distribution: experimental
+Urgency: low
+Maintainer: Roman Savochenko <rom_as@oscada.org>
+Changed-By: Roman Savochenko <roman@oscada.org>
+Description:
+ openscada  - Open SCADA system project
+ openscada-dbg - Debug symbols for OpenSCADA
+ openscada-dev - OpenSCADA development
+ openscada-doc-en - OpenSCADA documents (EN)
+ openscada-doc-ru - OpenSCADA documents (RU)
+ openscada-doc-uk - OpenSCADA documents (UK)
+ openscada-libdb-main - Main OpenSCADA libraries for DAQ and other into SQLite DB
+ openscada-libdb-vca - Visual components libraries into SQLite DB
+ openscada-model-aglks - Model "AGLKS" data bases and config (Demo: EN,UK,RU)
+ openscada-model-boiler - Model "Boiler" data bases and config (EN,UK,RU)
+ openscada-plc - OpenSCADA - PLC virtual package
+ openscada-server - OpenSCADA - server virtual package
+Changes:
+ openscada (1+r2721-1) experimental; urgency=low
+ .
+   * Work version scheme naming 1+rNNNN, sets by the AutoBuilder or manual.
+   * LTS version naming 0.9.N.
+Checksums-Sha1:
+ 2d644093cbd49aa5da1558a12b48932a7d565652 1733 openscada_1+r2721-1.dsc
+ 3a618dd3b71ab1739d3709dbcdce473e2e61a600 165178486 openscada_1+r2721-1.tar.gz
+ e2b6e769cece351b8f4ad7acdb401e1f8940e68c 20819788 openscada-dbg_1+r2721-1_arm64.deb
+ a813bccf06ce13f956ee0519e6d136ccf02748ba 295730 openscada-dev_1+r2721-1_arm64.deb
+ 7cc25323578c89c01b1c2da80962d7adffbe6526 36129958 openscada-doc-en_1+r2721-1_all.deb
+ 4321458d975e5426c9a14121718c50ed795fe7b2 31408600 openscada-doc-ru_1+r2721-1_all.deb
+ 3664ee58d438233cdb2c741eed741af0d9cf3731 32229460 openscada-doc-uk_1+r2721-1_all.deb
+ a6075c07d6afd19e70a1f441dbe3141e6fe6b1b2 440472 openscada-libdb-main_1+r2721-1_all.deb
+ d42b4f0f5e8c844c869e1501fe685da3defc51d1 1244208 openscada-libdb-vca_1+r2721-1_all.deb
+ d86471ff43c30d1e50a8e9031bb95e64715fef04 460536 openscada-model-aglks_1+r2721-1_all.deb
+ 71bfeae46f12d22eac9edbcb718f44083f3a63b3 939472 openscada-model-boiler_1+r2721-1_all.deb
+ 8b879dfdb9e188587212e08571b083e6de5f1525 260964 openscada-plc_1+r2721-1_all.deb
+ 67583edd908627d6c08501723cbb1cf6ce1759c2 260960 openscada-server_1+r2721-1_all.deb
+ 8815ada8f55f97363e98065f65665dd1af63549d 16911 openscada_1+r2721-1_arm64.buildinfo
+ 677375a56fd1d938c09fc219e2648c12ee7033e2 4579270 openscada_1+r2721-1_arm64.deb
+Checksums-Sha256:
+ 2d923d0004049048af107df0ebd0939e73a7bc9977421bebe39c7480b60ddce8 1733 openscada_1+r2721-1.dsc
+ b6f8d8b05326d571d87b1cfe1cd9b92bb2c77a0fb8e14e06eaf5eca0cd84ea43 165178486 openscada_1+r2721-1.tar.gz
+ 4b32ad4a78af325c52d5cac4c0f2397454f016dec46a83764468d645c0206c15 20819788 openscada-dbg_1+r2721-1_arm64.deb
+ 3240c9131c02ed5e1583938a9fc32d5641f7f52176982b1db9f70d3347855544 295730 openscada-dev_1+r2721-1_arm64.deb
+ c59bab334787475db5efe5151aed9988cff55914b7826b1edeb95206dc2a419b 36129958 openscada-doc-en_1+r2721-1_all.deb
+ 1a94e4cca4f9bf266e067d21ad0982dd60555198287cc5cbbd57736b953be9ed 31408600 openscada-doc-ru_1+r2721-1_all.deb
+ 3c8fe62c0342cc7b4b3f137c895b51dd9963ca2e7a846590701f52d3e40a6994 32229460 openscada-doc-uk_1+r2721-1_all.deb
+ b17826d787c747fb5525ac4bae299132a6bfbb63b99b57f1471aea56a485eef5 440472 openscada-libdb-main_1+r2721-1_all.deb
+ 0a92be8fe04e2d008d2c019cbca4a13302e13b188e01c7ca10065d0155700070 1244208 openscada-libdb-vca_1+r2721-1_all.deb
+ 65038a8f437ac2a7761f3489acd367861c1f91daa5f56e4764c175570f42c2f4 460536 openscada-model-aglks_1+r2721-1_all.deb
+ afa50e8a388a854d04d7f90f29487b53d101a5b1fadf56dd39d544cec7ba0455 939472 openscada-model-boiler_1+r2721-1_all.deb
+ 538a9e81ecf55c22874f52b56ad0f1b6a0c881425f1cf6097467c0cdc65566e3 260964 openscada-plc_1+r2721-1_all.deb
+ 3d6e116a5a68324bf6c928bd1c9db5381065474e24d53e5494b84d55f164690f 260960 openscada-server_1+r2721-1_all.deb
+ 23467eb9532ac9f3694c3b68fd301c07107736934637edfa09758529789b4c3d 16911 openscada_1+r2721-1_arm64.buildinfo
+ 8e64c8fa71fca243a3dec129c47a4debbf9d575adbfef5f3914deb7bb0895726 4579270 openscada_1+r2721-1_arm64.deb
+Files:
+ 2a3771cedc4aa086687c3a7802a9117d 1733 graphics optional openscada_1+r2721-1.dsc
+ c05166094b83801de9d3150e307fa828 165178486 graphics optional openscada_1+r2721-1.tar.gz
+ ff817b51dd57108808392be2601dc0b6 20819788 debug extra openscada-dbg_1+r2721-1_arm64.deb
+ e4c24b1ceae525a9caef4f01f4664b14 295730 graphics optional openscada-dev_1+r2721-1_arm64.deb
+ 36dfbf0b36a21b4ff5a5c1cebeeb2311 36129958 graphics optional openscada-doc-en_1+r2721-1_all.deb
+ 1fd415b87c2fdbeeca49889ea5d16ee8 31408600 graphics optional openscada-doc-ru_1+r2721-1_all.deb
+ 070ac9e267758432b1bfcb47aeef2bf4 32229460 graphics optional openscada-doc-uk_1+r2721-1_all.deb
+ c9471b2ae324744dff415afeb0c71293 440472 graphics optional openscada-libdb-main_1+r2721-1_all.deb
+ 5aadcaec525957832df19a0d3827dc25 1244208 graphics optional openscada-libdb-vca_1+r2721-1_all.deb
+ acfb61d42be0ab6d98952adbcbfaceb9 460536 graphics optional openscada-model-aglks_1+r2721-1_all.deb
+ c83f95179ec2d0bfb421757c7c1ebfaa 939472 graphics optional openscada-model-boiler_1+r2721-1_all.deb
+ 040f024f4b466735fe25df73e922f2d0 260964 graphics optional openscada-plc_1+r2721-1_all.deb
+ 0ce3e9a33a28e557380785af557ab7a4 260960 graphics optional openscada-server_1+r2721-1_all.deb
+ 1024540c9662bdad163326b2d2ca37bf 16911 graphics optional openscada_1+r2721-1_arm64.buildinfo
+ ec006441a0ead08e6f785a4da4d9b12b 4579270 graphics optional openscada_1+r2721-1_arm64.deb
