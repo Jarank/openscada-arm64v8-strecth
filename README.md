@@ -7,7 +7,9 @@ Build from source http://oscada.org/oscadaArch/LTS/
 By:Jaran Keowma jaran_k@hotmail.com 10-Dec-2020.
 -----------------------------------------------------
 Donations:
-BTC:333KnJLRjmcsrD9UYx8E6Zacg6Z3cf5rxp
-ETH:0xf1df989384711e5add1d6be5f1d1ce659b72cb97
-DOGE:D5bzMvVaHYBTBtv6KRMemxgoWQGP8DVEGa
+BTC: 333KnJLRjmcsrD9UYx8E6Zacg6Z3cf5rxp
+
+ETH: 0xf1df989384711e5add1d6be5f1d1ce659b72cb97
+
+DOGE: D5bzMvVaHYBTBtv6KRMemxgoWQGP8DVEGa
 
